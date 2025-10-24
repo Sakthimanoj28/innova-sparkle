@@ -6,15 +6,12 @@ const Experience = () => {
       title: "AI Engineer Intern",
       company: "Food Printer Pvt Ltd",
       location: "iTNT Hub, Anna University Campus, Chennai",
-      duration: "Nov 2025 – Dec 2025",
-      stipend: "₹10,000/month",
+      duration: "3 months",
       icon: <Briefcase className="text-primary" size={24} />,
       achievements: [
         "Developed and optimized AI-driven systems for intelligent food printing automation",
         "Contributed to data preprocessing, model training, and deployment using Python and TensorFlow",
-        "Implemented computer vision and machine learning algorithms for process accuracy and predictive insights",
-        "Collaborated with the AI R&D team to design real-time decision systems enhancing production efficiency",
-        "Gained hands-on experience in AI model integration, data handling, and system validation under industrial conditions"
+        "Implemented computer vision and machine learning algorithms for process accuracy and predictive insights"
       ]
     },
     {
@@ -71,11 +68,6 @@ const Experience = () => {
                   {exp.duration && (
                     <p className="text-sm text-muted-foreground">
                       📅 {exp.duration}
-                    </p>
-                  )}
-                  {exp.stipend && (
-                    <p className="text-sm text-muted-foreground">
-                      💰 Stipend: {exp.stipend}
                     </p>
                   )}
                 </div>
