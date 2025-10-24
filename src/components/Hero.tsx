@@ -1,29 +1,29 @@
 import { Mail, Linkedin, Github, Phone } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import aiBgImage from "@/assets/ai-mind-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-4xl w-full text-center">
-        <div className="mb-8 flex justify-center">
-          <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-primary/10">
-            <img 
-              src={profilePhoto} 
-              alt="Sakthi Manoj" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
+    <section 
+      id="home" 
+      className="min-h-screen flex items-center justify-center px-6 py-20 relative"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${aiBgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      <div className="max-w-4xl w-full text-center relative z-10">
         
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-primary">
+        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white">
           Sakthi Manoj R
         </h1>
         
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-white/90">
           AI Engineer & Data Scientist
         </h2>
         
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
+        <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">
           Aspiring AI and Data Science professional with strong academic background, 
           hands-on internship experience, and proven analytical expertise. Passionate about 
           applying machine learning, NLP, and automation to build intelligent real-world solutions.

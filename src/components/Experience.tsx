@@ -3,6 +3,21 @@ import { Briefcase, TrendingUp } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "AI Engineer Intern",
+      company: "Food Printer Pvt Ltd",
+      location: "iTNT Hub, Anna University Campus, Chennai",
+      duration: "Nov 2025 – Dec 2025",
+      stipend: "₹10,000/month",
+      icon: <Briefcase className="text-primary" size={24} />,
+      achievements: [
+        "Developed and optimized AI-driven systems for intelligent food printing automation",
+        "Contributed to data preprocessing, model training, and deployment using Python and TensorFlow",
+        "Implemented computer vision and machine learning algorithms for process accuracy and predictive insights",
+        "Collaborated with the AI R&D team to design real-time decision systems enhancing production efficiency",
+        "Gained hands-on experience in AI model integration, data handling, and system validation under industrial conditions"
+      ]
+    },
+    {
       title: "AI Intern",
       company: "One Yes Infotech",
       icon: <Briefcase className="text-primary" size={24} />,
@@ -48,9 +63,19 @@ const Experience = () => {
                   <p className="text-lg text-primary font-semibold">
                     {exp.company}
                   </p>
+                  {exp.location && (
+                    <p className="text-sm text-muted-foreground">
+                      📍 {exp.location}
+                    </p>
+                  )}
                   {exp.duration && (
                     <p className="text-sm text-muted-foreground">
-                      {exp.duration}
+                      📅 {exp.duration}
+                    </p>
+                  )}
+                  {exp.stipend && (
+                    <p className="text-sm text-muted-foreground">
+                      💰 Stipend: {exp.stipend}
                     </p>
                   )}
                 </div>
