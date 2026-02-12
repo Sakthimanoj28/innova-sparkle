@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to your Sakthimanoj's Lovable project
 
 ## Project info
 
