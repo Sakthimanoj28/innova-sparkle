@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to Sakthi Manoj's Lovable project
 
 #edited 1 by manager
 
